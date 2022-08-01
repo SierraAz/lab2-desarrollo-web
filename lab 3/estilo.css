@@ -1,0 +1,165 @@
+body{
+    background-color: purple;
+}
+
+.contenedor{
+    width:1000px;
+    height:100px;
+    background: rgb(20, 158, 20);
+    padding:10px;
+    border:5px solid #000000;
+    margin:40px;
+
+    display:-webkit-flex;
+    display: -ms-flexbox;
+    display:flex;
+
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
+
+.elemento{
+    color:rgb(0, 0, 0);
+    margin: 5px;
+    /*width: 50px;*/
+    height: 30px;
+    background:#ffffff;
+    text-align: center;
+    border:5px solid #000000;
+    align-self: flex-end;
+}
+
+.elemento2{
+    color:rgb(0, 0, 0);
+    margin: 5px;
+    /*width: 50px;*/
+    height: 30px;
+    background:#32b95f;
+    text-align: center;
+    border:5px solid #ffffff;
+    
+}
+
+.elemento3{
+    color:rgb(0, 0, 0);
+    margin: 5px;
+    height: 550px;
+    background:#5263c5;
+    text-align: center;
+    border:5px solid #ffffff;
+    
+    
+}
+
+.elemento4{
+    color:rgb(0, 0, 0);
+    margin: 5px;
+    height: 370px;
+    background:orange;
+    text-align: center;
+    border:5px solid #ffffff;
+    
+    
+}
+.elemento4y2{
+    color:rgb(0, 0, 0);
+    margin: 5px;
+    width: 200px;
+    height: 30px;
+    background:orange;
+    text-align: center;
+    border:5px solid #ffffff;
+    
+    
+}
+
+.elemento5{
+    color:rgb(0, 0, 0);
+    margin: 5px;
+    
+    height: 30px;
+    background:rgb(255, 255, 255);
+    text-align: center;
+    border:5px solid #ffffff;
+    justify-content: flex-end;
+    
+    
+}
+
+.elemento6{
+    color:rgb(0, 0, 0);
+    margin: 5px;
+    
+    height: 550px;
+    background:rgb(255, 255, 255);
+    text-align: center;
+    border:5px solid #000000;
+    justify-content: flex-end;
+    
+    
+}
+
+
+
+
+
+.wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.wrapper>*{
+    padding: 10px;
+    margin: 10px;
+    flex: 1 100%;
+    border-radius: 10px;
+
+}
+
+.header{
+    background: rgb(29, 155, 77);
+    height: 120px;
+}
+
+.footer{
+    background: rgb(255, 255, 255);
+    height: 80px;
+}
+
+.main{
+    text-align: left;
+    background-color: skyblue;
+    height: 300px;
+    font-size:24px;
+}
+.aside1{
+    background:rgb(182, 58, 58);
+
+    height: 700px;
+}
+.aside2{
+    background:rgb(182, 58, 58);
+}
+ @media all and (min-width: 800px){
+
+    .aside1{
+        order:1;
+    }
+    .aside2{
+        order:2;
+    }
+    .main{
+        order:2;
+    }
+    .footer{
+        order:4;
+    }
+
+}
+@media all and (min-width: 600px){
+    .aside{
+        flex:1;
+    }
+}
